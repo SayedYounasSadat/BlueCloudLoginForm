@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS Files/style.css">
+    <link rel="stylesheet" href="CSS Files/normalize.css">
+    <script>
+        function OpenLoginForm(){
+            document.body.classList.add("showLoginForm")
+        }
+        function CloseLoginForm(){
+            document.body.classList.remove("showLoginForm")
+        }
+    </script>
+</head>
+<body>
+    <div class="center">
+        <h1>Welcome to The Secret Society!</h1>
+        <h2>Login to Continue</h2>
+        <button onclick="OpenLoginForm()">LOGIN</button>
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup">
+    <div class="popup-close" onclick="CloseLoginForm()">&times;</div>
+    <div class="form">
+        <div class="avatar">
+            <img src="https://bit.ly/31pHqJb" alt="">
+        </div>
+        <div class="header">
+            Member Login
+        </div>
+        <div class="element">
+            <label for="username">Username</label>
+            <input type="text" id="username">
+        </div>
+        <div class="element">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+        </div>
+        <div class="element">
+            <button>LOGIN</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
